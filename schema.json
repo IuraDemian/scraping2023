@@ -1,15 +1,18 @@
 {
   "Items": {
     "type": "collection",
-    "methods": ["GET", "POST"],
     "schema": {
+      "id": "auto-increment",
       "name": "string",
       "specs": {
-        "Годинниковий механізм": "string",
-        "Матеріал корпусу": "string",
-        "Скло": "string",
-        "Розмір корпусу, мм": "string",
-        "Рік": "string"
+        "type": "object",
+        "schema": {
+          "Годинниковий механізм": "string",
+          "Матеріал корпусу": "string",
+          "Скло": "string",
+          "Розмір корпусу, мм": "string",
+          "Рік": "string"
+        }
       }
     }
   }
